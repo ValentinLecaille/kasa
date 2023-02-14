@@ -1,0 +1,23 @@
+.flat {
+    background-image: linear-gradient(to top, #d16868, #ff6060);
+    border-radius: 2rem;
+    display: grid;
+    align-items: end;
+    flex-basis: 30%;
+    min-width: 200px;
+    min-height: 300px;
+}
+
+.flat_title {
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .flat {
+        flex-basis: 100%;
+    }
+  }

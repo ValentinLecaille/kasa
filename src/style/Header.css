@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 24px;
+    gap: 2rem;
+};
+
+.navbar > *:first-child {
+    margin-right: auto;
+}
+
+
