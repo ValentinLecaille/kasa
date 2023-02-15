@@ -1,6 +1,6 @@
 .grid_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
     padding: 4rem;
     flex-wrap: wrap;
@@ -9,12 +9,11 @@
     border-radius: 25px;
     max-width: 100%;
     min-height: 50vh;
-};
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .grid_container {
-        justify-content: center;
-        background-color: none;
+        background-color: white;
         padding: 0;
     }
-  };
+}

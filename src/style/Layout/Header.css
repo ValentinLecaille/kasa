@@ -3,15 +3,18 @@
     margin: 2rem;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+.navbar__item {
     text-decoration: none;
     color: #FF6060;
     font-weight: 500;
     font-size: 24px;
-    gap: 2rem;
-};
-
-.navbar > *:first-child {
-    margin-right: auto;
 }
 
-
+@media screen and (max-width: 768px) {
+    .navbar__item {
+        text-transform: uppercase;
+    }
+}

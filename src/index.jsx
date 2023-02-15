@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './App.css';
-import App from './App';
+import '../src/style/Home/Home.css';
+import Home from './pages/Home/Home';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Footer from '../src/components/Footer'
-import Header from '../src/components/Header'
-import Main from '../src/components/Main'
-import HighWraper from './components/HighWraper';
+import Footer from './layout/Footer'
+import Header from './layout/Header'
+import Main from './layout/Main'
+import Flat from './pages/Flat/Flat'
+import About from './pages/About/About'
+import HighWraper from './layout/HighWraper';
 
 const HeaderFooterlayout = () => {
   return <>
-    
     <HighWraper>
       <Header />
       <Main>
@@ -29,16 +30,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />
+        element: <Home />
     },
     {
       path: "/flat",
-      element: 
-      <h1>Appartement</h1>
+      element: <Flat />
     },
     {
       path: "/about",
-      element: <h1>A propos</h1>
+      element: <About />
     }
     ]
   },

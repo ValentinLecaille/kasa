@@ -1,0 +1,10 @@
+.flat-banner {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.flat-banner img {
+    width: 100%;
+}

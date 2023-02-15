@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Header.css'
+import '../style/Layout/Header.css'
 // on utilise NavLink au lieu de Link pour que l'utilisateur sache sur quelle page il navigue
 import {NavLink} from 'react-router-dom'
 
@@ -12,13 +12,9 @@ function Header() {
         </div>
         </NavLink>
 
-        <NavLink to='/'>
-            <span className='navbar__item'>Accueil</span>
-        </NavLink>
+        <NavLink className='navbar__item' to='/'>Accueil</NavLink>
         
-        <NavLink to='/about'>
-            <span className='navbar__item'>A Propos</span>
-        </NavLink>
+        <NavLink className='navbar__item' to='/about'>A Propos</NavLink>
     </nav>
     )
 };

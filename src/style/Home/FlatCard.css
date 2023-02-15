@@ -1,0 +1,32 @@
+.flat-link {
+    display: inline-block;
+    flex-basis: 30%;
+}
+
+.flat-card {
+    background-image: url('https://picsum.photos/400');
+    background-size: cover;
+    border-radius: 1rem;
+    display: grid;
+    align-items: end;
+    width: 340px;
+    height: 340px;
+}
+
+.flat_title {
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .flat-link {
+        flex-basis: 100%;
+    }
+    .flat-card {
+        width: 100%;
+    }
+
+}

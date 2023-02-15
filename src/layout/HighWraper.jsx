@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/HighWraper.css'
+import '../style/Layout/HighWraper.css'
 
 
 function HighWraper(props) {

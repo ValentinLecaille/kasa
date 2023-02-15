@@ -1,9 +1,19 @@
-.banner {
+.about-container {
+    padding-inline: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding-inline: 0;
+    }
+  }
+
+.about-banner {
     position: relative;
     max-width: 100%;
     border-radius: 25px;
     height: 223px;
-    background-image: url('../assets/Background.png');
+    background-image: url('../../assets/mountain-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,12 +21,13 @@
     place-items: center;
     color: white; 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     line-height: 142.6%;
+    margin-bottom: 2rem;
 }
 
-.banner::before {
+.about-banner::before {
     position: absolute;
     border-radius: 25px;
     content: "";

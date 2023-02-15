@@ -1,6 +1,6 @@
 import React from 'react'
-import '../style/FlatGrid.css'
-import Flat from './Flat.jsx'
+import '../../style/Home/FlatGrid.css'
+import Flat from './Flat-Card'
 
 function Flatgrid() {
   return <div className='grid_container'>
