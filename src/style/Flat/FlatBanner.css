@@ -1,10 +1,51 @@
 .flat-banner {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 1rem;
     margin-bottom: 2rem;
+    position: relative;
 }
 
-.flat-banner img {
+.flat-banner .banner-img {
+    position: relative;
     width: 100%;
+    height: 415px;
 }
+
+.banner-img img {
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    opacity: 0;
+    z-index: 0;
+}
+
+.flat-banner .show {
+    opacity: 1;
+}
+
+.flat-banner button {
+    background-color: transparent;
+    color: white;
+    opacity: 0.8;
+    border: 0ch;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.prevBtn {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.nextBtn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+ 

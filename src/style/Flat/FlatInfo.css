@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-basis: 50%;
     gap: 1rem;
     width: 100%;
 }
@@ -13,6 +14,12 @@
 .flat-info i {
     font-size: 18px;
     rotate: 50%;
+    cursor: pointer;
+}
+
+.flat-description {
+    flex-basis: 50%;
+    overflow: hidden;
 }
 
 .flat-description-title {
@@ -49,6 +56,18 @@
     z-index: -1;
     position: relative;
     top: -1rem;
+    animation: growDown 300ms ease-in-out forwards;
+}
+
+@keyframes growDown {
+    from {
+        transform : translateY(-100%);
+    }
+}
+@keyframes growUp {
+    to{
+        transform : translateY(-100%);
+    }
 }
 
 .flat-equipments-txt {

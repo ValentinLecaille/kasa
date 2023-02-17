@@ -1,14 +1,20 @@
 import React from 'react'
 import '../../style/Flat/FlatInfo.css'
 
-function InfoPanel() {
+function InfoPanel(props) {
+
+const [isContentVisible, setIsContentVisible] = React.useState(false);
+const showContent = () => {
+  setIsContentVisible(!isContentVisible);
+}
   return (
     <div className='flat-description'>
       <p className='flat-description-title'>
-        <span>Description</span>
-        <i className="fa-solid fa-chevron-down"></i>
+        <span>{props.title}</span>
+        <i className="fa-solid fa-chevron-up" onClick={showContent}></i>
       </p>
-      <p className='flat-description-txt'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, itaque, quas mollitia commodi qui ipsa est amet deleniti neque vel possimus error totam rerum. Quo expedita quidem rerum! Autem ab assumenda cum accusamus itaque, saepe numquam illo eum excepturi eaque fugiat optio nobis ducimus sequi a ipsa et voluptatum dolore.</p>
+      
+      {isContentVisible && <p className='flat-description-txt'>{props.content}</p>}
     </div>
   );
 }

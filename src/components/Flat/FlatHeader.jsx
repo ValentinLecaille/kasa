@@ -1,35 +1,39 @@
 import React from 'react'
 import '../../style/Flat/FlatHeader.css'
 
-function FlatHeader() {
+function FlatHeader(props) {
+  const name = props.host.name;
+  const [firstName, lastName] = name.split(" ");
+
   return (
-<div className='flat-header'>
-<div className='flat-title'>
-    <h1>Crazy Loft on canal St Martin</h1>
-    <h2>Paris, Ile De France</h2>
-    <div className='flat-tag'>
-    <span>Cosy</span>
-    <span>Canal</span>
-    <span>Paris 10</span>
+    <div className='flat-header'>
+    <div className='flat-title'>
+        <h1>{props.title}</h1>
+        <h2>{props.location}</h2>
+        <div className='flat-tag'>
+          {props.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+            ))}
+        </div>
     </div>
-</div>
-<div className='flat-owner'>
-    <div className='flat-owner-profile'>
-    <h3 className='flat-owner-name'>
-        <span>Alexandre</span>
-        <span>Dumas</span>
-    </h3>
-    <div className='flat-badge'></div>
+
+    <div className='flat-owner'> 
+        <div className='flat-owner-profile'>
+        <h3 className='flat-owner-name'>
+            <span>{firstName}</span>
+            <span>{lastName}</span>
+        </h3>
+        <div className='flat-badge'>
+          <img src={props.host.picture} alt="profil de l'hôte" />
+        </div>
+        </div>
+        <div className='flat-stars'>
+          { [1,2, 3, 4, 5].map((num) => (
+            <span key={num} className={props.rating >= num ? "on" : ""}>★</span>
+            ))}
+        </div>
+      </div>
     </div>
-    <div className='flat-stars'>
-    <span className='on'>★</span>
-    <span className='on'>★</span>
-    <span className='on'>★</span>
-    <span className='off'>★</span>
-    <span className='off'>★</span>
-    </div>
-</div>
-</div>
   )
 }
 

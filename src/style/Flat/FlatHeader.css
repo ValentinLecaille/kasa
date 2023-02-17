@@ -59,7 +59,7 @@
     gap: 1rem;
 }
 
-.flat-badge {
+.flat-badge img {
     background: #C4C4C4;
     border-radius: 50%;
     height: 64px;
@@ -68,13 +68,13 @@
 
 .flat-stars {
     display: flex;
-    color: #ff6060;
+    color: #C4C4C4;
     gap: .5rem;  
     font-size: 30px;  
 }
 
-.flat-stars .off {
-    color: #C4C4C4;
+.flat-stars .on {
+    color: #ff6060;
 }
 
 @media screen and (max-width: 768px) {

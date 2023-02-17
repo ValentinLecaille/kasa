@@ -1,0 +1,24 @@
+.error-container {
+    color: #ff6060;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.error-subtitle {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+
+.error-link {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration-line: underline;
+}

@@ -2,14 +2,20 @@ import React from 'react'
 import '../../style/Home/FlatCard.css'
 import {Link} from 'react-router-dom'
 
-function Flat() {
+function Flat(props) {
   return (
-    <Link className='flat-link' to='/flat'>
+    <Link className='flat-link' 
+      to="/flat"
+      state = {{
+        flatId: props.id
+      }}
+    >
       <div className='flat-card'>
-          <div className='flat_title'>Titre de la location</div>
+        <img src={props.imageUrl} alt="" />
+        <div className='flat_title'>{props.title}</div>
       </div>
     </Link>
   );
 }
-
+ 
 export default Flat

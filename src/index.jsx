@@ -8,7 +8,8 @@ import Header from './layout/Header'
 import Main from './layout/Main'
 import Flat from './pages/Flat/Flat'
 import About from './pages/About/About'
-import HighWraper from './layout/HighWraper';
+import Error from './pages/Error/Error'
+import HighWraper from './layout/HighWraper'
 
 const HeaderFooterlayout = () => {
   return <>
@@ -26,7 +27,7 @@ const HeaderFooterlayout = () => {
 const router = createBrowserRouter([
   {
     element: <HeaderFooterlayout />,
-    errorElement: <h1>404 not found</h1>,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
