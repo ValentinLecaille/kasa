@@ -1,9 +1,10 @@
 .grid_container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 1rem;
     padding: 4rem;
-    flex-wrap: wrap;
     margin-top: 2rem;
     background-color: #F7F7F7;
     border-radius: 25px;
@@ -15,5 +16,6 @@
     .grid_container {
         background-color: white;
         padding: 0;
+        flex-direction: column;
     }
 }

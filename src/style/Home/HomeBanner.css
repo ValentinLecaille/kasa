@@ -17,10 +17,22 @@
     margin-bottom: 2rem;
 }
 
+.banner-txt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .banner::before {
     position: absolute;
     border-radius: 25px;
     content: "";
     inset: 0;
     opacity: 0.5;
-};
+}
+@media screen and (max-width: 768px) {
+    .banner-txt {
+        align-items: center;
+        margin-left: 2rem;
+    }
+}

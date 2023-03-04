@@ -18,7 +18,7 @@ function Flatgrid() {
   return (
     <div className='grid_container'>
     {flats.map((flat) => (
-      <Flat title={flat.title} imageUrl={flat.cover} id={flat.id}/>      
+      <Flat key={flat.id} title={flat.title} imageUrl={flat.cover} id={flat.id}/>      
     ))}
     </div>
   )

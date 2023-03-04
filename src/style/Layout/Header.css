@@ -1,9 +1,22 @@
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     margin: 2rem;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+
+.navbar__logo {
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+}
+
+.navbar__item--container {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
 }
 
 .navbar__item {
@@ -16,5 +29,20 @@
 @media screen and (max-width: 768px) {
     .navbar__item {
         text-transform: uppercase;
+        font-size: 14px;
+    }
+    .navbar__logo {
+        width: 145px;
+        height: 47px;
+    }
+    .navbar__item--container {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
     }
 }

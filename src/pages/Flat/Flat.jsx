@@ -43,7 +43,7 @@ function Flat() {
         <InfoPanel 
           title="Equipements"
           content = {findFlat.equipments.map(equipment => (
-          <li>{equipment}</li>
+          <li className="rotate">{equipment}</li>
           ))}
         />
       </div>

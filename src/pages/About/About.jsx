@@ -1,7 +1,7 @@
 import React from 'react'
-import AboutBanner from '../../components/About/AboutBanner'
 import '../../style/About/About.css'
 import InfoPanel from '../../components/Flat/InfoPanel'
+import AboutBanner from '../../components/About/About-Banner'
 
 function About() {
   return (

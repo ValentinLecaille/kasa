@@ -1,6 +1,7 @@
 .footer {
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -10,9 +11,9 @@
     min-height: 200px;
     font-weight: 500;
     font-size: 24px;
-};
+}
 
 .footer_logo {
     width: 122px;
     height: 40px;
-};
+}

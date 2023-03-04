@@ -21,7 +21,7 @@ function FlatBanner(props) {
       return;
     }
     SetCurrentPicture(currentPicture - 1);
-  }
+  };
 
   return (
 
@@ -41,7 +41,7 @@ function FlatBanner(props) {
       <button className="prevBtn" onClick={prevPic}>
          <i className="fas fa-chevron-left"></i> 
       </button>
-      
+
     </div>
   );
 }
