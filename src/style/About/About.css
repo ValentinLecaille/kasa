@@ -1,7 +1,6 @@
 .about-container {
     padding-inline: 5rem;
     cursor: pointer;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,20 +18,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    place-items: center;
-    color: white; 
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 142.6%;
     margin-bottom: 2rem;
 }
 
-.about-banner::before {
-    position: absolute;
-    border-radius: 25px;
-    content: "";
-    inset: 0;
-    opacity: 0.5;
-};
+.flat-description {
+    margin: 0%!important;
+}

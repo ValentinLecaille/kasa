@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../style/About/About.css'
+import '../../style/Flat/FlatInfo.css'
 import InfoPanel from '../../components/Flat/InfoPanel'
 import AboutBanner from '../../components/About/About-Banner'
 

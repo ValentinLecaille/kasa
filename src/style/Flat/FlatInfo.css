@@ -13,22 +13,21 @@
 
 .flat-info i {
     font-size: 18px;
-    rotate: 50%;
     cursor: pointer;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    transition: 0.5s transform;
 }
 
 .flat-description {
     flex-basis: 50%;
-    overflow: hidden;
 }
 
 .flat-description-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6060;
+    background-color: #FF6060;
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -36,12 +35,11 @@
     border-radius: 10px;
     z-index: 0;
 }
-
 .flat-equipments-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff6060;
+    background-color: #FF6060;
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -49,38 +47,23 @@
     border-radius: 10px;
     z-index: 0;
 }
-
 .flat-description-txt {
     background: #F6F6F6;
-    color: #ff6060;
+    color: #FF6060;
     padding:  1.5rem 1rem;
     border-radius: 10px;
     z-index: -1;
     position: relative;
-    top: -1rem;
-    animation: growDown 1s ease-in-out forwards;
-}
-
-@keyframes growDown {
-    from {
-        transform : translateY(0%);
-    }
-}
-@keyframes growUp {
-    to{
-        transform : translateY(-100%);
-    }
 }
 
 .flat-equipments-txt {
     background: #F6F6F6;
-    color: #ff6060;
+    color: #FF6060;
     border-radius: 10px;
     z-index: -1;
     position: relative;
     top: -1rem;
 }
-
 @media screen and (max-width: 768px) {
     .flat-info {
         flex-direction: column;

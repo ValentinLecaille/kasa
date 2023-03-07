@@ -34,16 +34,18 @@ function FlatBanner(props) {
         className={getClassName(index)}
       ></img>)}
       </div>
+      
+      {(pictures.length > 1) && <button className="nextBtn" onClick={nextPic}>
+        <i className="fas fa-chevron-right"></i>
+      </button> }
 
-      <button className="nextBtn" onClick={nextPic}>
-        <i className="fas fa-chevron-right"></i> 
-      </button>    
-      <button className="prevBtn" onClick={prevPic}>
-         <i className="fas fa-chevron-left"></i> 
-      </button>
+      {(pictures.length > 1) && <button className="prevBtn" onClick={prevPic}>
+        <i className="fas fa-chevron-left"></i>
+      </button> }
 
     </div>
   );
 }
 
 export default FlatBanner
+
