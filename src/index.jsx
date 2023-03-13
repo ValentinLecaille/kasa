@@ -23,7 +23,7 @@ const HeaderFooterlayout = () => {
   </>
 }
 
-// on initialise le router de l'application
+// on initialise le router de l'application avec les différentes routes vers les différentes pages
 const router = createBrowserRouter([
   {
     element: <HeaderFooterlayout />,
@@ -45,6 +45,7 @@ const router = createBrowserRouter([
   },
 ])
 
+// le render du DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // on donne le router comme prop au provider. le parent qui donnera accès à cette prop à tous les enfants.

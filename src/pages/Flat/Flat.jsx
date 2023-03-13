@@ -13,6 +13,7 @@ function Flat() {
   // eslint-disable-next-line
   useEffect(fetchFlatInfo, []);
 
+  // on réalise un fetch des informations de l'appartement.
   function fetchFlatInfo() {
     fetch("db.json")
       .then((res) => res.json())
@@ -37,16 +38,16 @@ function Flat() {
       />
       <div className='flat-info'>
         <InfoPanel 
-          key = {findFlat.description}
+          key = 'description'
           title = "Description"
           content = {findFlat.description}
         />
         <InfoPanel 
-          key = {findFlat.equipments}
+          key = 'equipements'
           title="Equipements"
-          content = {findFlat.equipments.map(equipment => (
-          <li>{equipment}</li>
-          ))}
+          content = {findFlat.equipments.map((equipment,index) => (
+            <li key={index}>{equipment}</li>
+            ))}
         />
       </div>
     </div>

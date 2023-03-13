@@ -2,9 +2,11 @@ import React from 'react'
 import '../../style/Flat/FlatHeader.css'
 
 function FlatHeader(props) {
+  // on récupère les informations sur l'hôte du logement
   const name = props.host.name;
   const [firstName, lastName] = name.split(" ");
 
+  // on retourne les infos dans le DOM
   return (
     <div className='flat-header'>
     <div className='flat-title'>

@@ -11,7 +11,7 @@
     margin-block: 0;
 }
 
-.flat-info i {
+.flat-description-title i {
     font-size: 18px;
     cursor: pointer;
     -webkit-transform: rotate(180deg);
@@ -34,6 +34,7 @@
     padding-block: 0.7rem;
     border-radius: 10px;
     z-index: 0;
+    margin-bottom: 0;
 }
 .flat-equipments-title {
     display: flex;
@@ -54,6 +55,7 @@
     border-radius: 10px;
     z-index: -1;
     position: relative;
+    margin-top: 0;
 }
 
 .flat-equipments-txt {

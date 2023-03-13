@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../style/Flat/FlatInfo.css'
 
+// on créé la fonction qui gére l'affichage des infos déroulantes du colapse et ses animations
 function InfoPanel(props) {
 const [isContentVisible, setIsContentVisible] = React.useState(false);
 const showContent = () => {
