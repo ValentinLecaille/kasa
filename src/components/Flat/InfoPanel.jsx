@@ -1,3 +1,5 @@
+// Composant du collapse déroulant pour la page logement et A propos
+
 import React from 'react'
 import '../../style/Flat/FlatInfo.css'
 

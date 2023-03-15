@@ -1,3 +1,5 @@
+// Composant des informations relative au logement : localisation, hôte, etc.
+
 import React from 'react'
 import '../../style/Flat/FlatHeader.css'
 

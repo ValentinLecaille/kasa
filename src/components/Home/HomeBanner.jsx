@@ -1,3 +1,5 @@
+// Composant de la bannière de la page d'accueil
+
 import React from 'react'
 import '../../style/Home/HomeBanner.css'
 

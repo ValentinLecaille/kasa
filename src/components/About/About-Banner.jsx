@@ -1,3 +1,5 @@
+// Composant de la bannière de la page A propos
+
 import React from 'react'
 import '../../style/About/About.css'
 

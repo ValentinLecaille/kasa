@@ -1,3 +1,5 @@
+// Composant de la bannière carousel de la page de présentation d'un logement. 
+
 import React, { useState } from 'react'
 import '../../style/Flat/FlatBanner.css'
 
