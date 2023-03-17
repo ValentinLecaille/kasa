@@ -44,6 +44,8 @@ function FlatBanner(props) {
         <i className="fas fa-chevron-right"></i>
       </button> }
 
+      <span className='counter'>{currentPicture +1} / {pictures.length}</span>
+
       {(pictures.length > 1) && <button className="prevBtn" onClick={prevPic}>
         <i className="fas fa-chevron-left"></i>
       </button> }

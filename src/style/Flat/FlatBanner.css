@@ -48,4 +48,19 @@
     top: 0;
     bottom: 0;
 }
- 
+
+.flat-banner .counter {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .counter {
+        opacity: 0;
+    }}
