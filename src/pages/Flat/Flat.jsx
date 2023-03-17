@@ -2,14 +2,15 @@ import React from 'react'
 import FlatBanner from '../../components/Flat/FlatBanner'
 import FlatHeader from '../../components/Flat/FlatHeader'
 import InfoPanel from '../../components/Flat/InfoPanel'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import flats from '../../assets/api/db.json'
 
 function Flat() {
     const id = useParams();
     const findFlat = flats.find(flat => flat.id === id.id);
 
-  if (findFlat == null) return <div>...Loading</div>;
+  if (findFlat == null) 
+  return <Navigate replace to="/404"/> ;
   return (
     <div className='flat-page'>
       <FlatBanner pictures={ findFlat.pictures }/>
@@ -33,7 +34,7 @@ function Flat() {
             <li key={index}>{equipment}</li>
             ))}
         />
-      </div>
+      </div> 
     </div>
   )
 }
