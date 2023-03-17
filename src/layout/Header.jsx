@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom'
 function Header() {
     return (
     <nav className='navbar'>
-        <NavLink to='/home'>
+        <NavLink to='/'>
             <img className='navbar__logo' src='LOGO.png' alt='logo'/>
         </NavLink>
 
