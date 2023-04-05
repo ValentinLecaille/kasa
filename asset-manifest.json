@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.fff736e0.css",
+    "main.js": "/kasa/static/js/main.b44cab88.js",
+    "static/media/mountain-background.png": "/kasa/static/media/mountain-background.dc7a08e1faa2e14de0bd.png",
+    "static/media/Background.png": "/kasa/static/media/Background.1029510ac4f34eb21921.png",
+    "index.html": "/kasa/index.html",
+    "main.fff736e0.css.map": "/kasa/static/css/main.fff736e0.css.map",
+    "main.b44cab88.js.map": "/kasa/static/js/main.b44cab88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fff736e0.css",
+    "static/js/main.b44cab88.js"
+  ]
+}
